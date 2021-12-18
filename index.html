@@ -9,105 +9,95 @@
 </head>
 <body>
     <header>
-        <h1></h1>            
+        <h1>CSS Snippet Cheatsheet</h1>            
         <p>Ever have trouble recalling the exact syntax for your favourite CSS code? Give it a permannant home and add it to this page! Select any snippet below and it will automatically select all the code for you to copy.</p>
     </header>
     <section class="row">
         <div class="outer-box">
             <h2>Flexbow Row</h2>
+            <p>Use these three properties to create a Flexbow row layout.</p>
             <div class="inner-box">
-                <p>Use these three properties to create a Flexbow row layout.</p>
-                <div class="content">
-                    <pre>
-                    .row {
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                    }
-                    </pre>
-                </div>
+                <pre>
+                .row {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+                </pre>
             </div>
         </div>
         <div class="outer-box">
             <h2>Flexbox Column</h2>
+            <p>Use this to create a Flexbox column layout.</p>
             <div class="inner-box">
-                <p>Use this to create a Flexbox column layout.</p>
-                <div class="content">
-                    <pre>
-                    .column {
-                        display: flex;
-                        flex-direction: column;
-                        flex-wrap: wrap;
-                    }
-                    </pre>
-                </div>
+                <pre>
+                .column {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+                </pre>
             </div>
         </div>
         <div class="outer-box">
             <h2>CSS Grid Layout</h2>
+            <p>Build a 12 column layout using CSS Grid.</p>
             <div class="inner-box">
-                <p>Build a 12 column layout using CSS Grid.</p>
-                <div class="content">
-                    <pre>
-                    .grid {
-                        display: grid;
-                        width: 100%;
-                        grid-template-columns: repeat(12, 1fr);
-                    }
-                    </pre>
-                </div>
+                <pre>
+                .grid {
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: repeat(12, 1fr);
+                }
+                </pre>
             </div>
         </div>
-    </section>
-    <section class="row">
         <div class="outer-box">
             <h2>Linear Gradients</h2>
+            <p>This will create a background linear gradient from top to bottom.</p>
             <div class="inner-box">
-                <p>This will create a background linear gradient from top to bottom.</p>
-                <div class="content">
-                    <pre>
-                    .linear-gradient-background {
-                        background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100%);
-                    }
-                    </pre>
-                </div>
+                <pre>
+                .linear-gradient-background {
+                    background-image: linear-gradient
+                    (rgba(232, 102, 236, 0.3) 0%, 
+                    rgba(232, 102, 236, 0.6) 100%);
+                }
+                </pre>
             </div>
         </div>
         <div class="outer-box"> 
             <h2>Bow Transition Glow</h2>
+            <p>Use transition and box shadows to grow on hover.</p>
             <div class="inner-box">
-                <p>Use transition and box shadows to grow on hover.</p>
-                <div class="content">
-                    <pre>
-                    .code-card .card-header {
-                        border-radius: 8px;
-                        transition: all 0.5s ease-in-out;
-                    }
+                <pre>
+                .code-card .card-header {
+                    border-radius: 8px;
+                    transition: all 0.5s ease-in-out;
+                }
 
-                    .code-card:hover, .code-card:hover .card-header {
-                        box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
-                    }
-                    </pre>
-                </div>
+                .code-card:hover, .code-card:hover .card-header {
+                    box-shadow: inset 0px 0px 8px 
+                    rgba(232, 102, 236, 1), 
+                    0 0 15px rgba(232, 102, 236, 1);
+                }
+                </pre>
             </div>
         </div>
         <div class="outer-box">
-            <h2>Overlay Card with Title </h2>
+            <h2>Overlay Card with Title </h2>                
+            <p>Use position properties and negative margins to raise elements higher then there natural starting point.</p>
             <div class="inner-box">
-                <p>Use position properties and negative margins to raise elements higher then there natural starting point.</p>
-                <div class="content">
-                    <pre>
-                    .card-header {
-                        position: relative;
-                        margin-top: -20px;
-                    }
-                    </pre>
-                </div>
+                <pre>
+                .card-header {
+                    position: relative;
+                    margin-top: -20px;
+                }
+                </pre>
             </div>
         </div>
     </section>
     <footer>
-        <h3>Made with ❤️ and CSS</h3>
+        <h2>Made with ❤️ and CSS</h2>
     </footer>
     
 </body>
